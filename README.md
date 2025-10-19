@@ -359,7 +359,6 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 - [ ] Webhook-based device inventory sync
 - [ ] Custom vulnerability scoring models
 - [ ] Integration with SIEM systems
-- [ ] Mobile app (iOS/Android)
 - [ ] REST API for programmatic access
 
 ---
@@ -407,10 +406,5 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 This tool is provided for **defensive security purposes only**. The authors are not responsible for any misuse or damage caused by this software. Always ensure you have proper authorization before scanning or monitoring systems.
 
----
-
-## 🌟 Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=mohamedalhassan789/secvuln-agent&type=Date)](https://star-history.com/#mohamedalhassan789/secvuln-agent&Date)
 
 
