@@ -411,15 +411,6 @@ This tool is provided for **defensive security purposes only**. The authors are 
 
 ## 🌟 Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/secvuln-agent&type=Date)](https://star-history.com/#yourusername/secvuln-agent&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=mohamedalhassan789/secvuln-agent&type=Date)](https://star-history.com/#mohamedalhassan789/secvuln-agent&Date)
 
----
-
-<div align="center">
-
-**Built with ❤️ by the Security Community**
-
-[⬆ Back to Top](#-voight-secvuln-agent)
-
-</div>
 
