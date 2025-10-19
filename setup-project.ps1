@@ -1,0 +1,16 @@
+# Create project structure
+$projectRoot = "C:\Projects\secvuln-agent"
+New-Item -ItemType Directory -Force -Path "$projectRoot\config"
+New-Item -ItemType Directory -Force -Path "$projectRoot\src\collectors"
+New-Item -ItemType Directory -Force -Path "$projectRoot\src\processors"
+New-Item -ItemType Directory -Force -Path "$projectRoot\src\notifiers"
+New-Item -ItemType Directory -Force -Path "$projectRoot\src\utils"
+New-Item -ItemType Directory -Force -Path "$projectRoot\data"
+New-Item -ItemType Directory -Force -Path "$projectRoot\logs"
+New-Item -ItemType Directory -Force -Path "$projectRoot\reports"
+
+Write-Host "Project structure created at $projectRoot"
+Write-Host "Next steps:"
+Write-Host "1. cd $projectRoot"
+Write-Host "2. Ask Claude in chat to provide the Python files"
+Write-Host "3. Create each file manually or copy-paste code"

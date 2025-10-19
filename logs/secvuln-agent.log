@@ -1,0 +1,640 @@
+2025-10-16 00:39:52 | INFO     | secvuln-agent | __init__:43 | ============================================================
+2025-10-16 00:39:52 | INFO     | secvuln-agent | __init__:44 | SecVuln Agent Starting...
+2025-10-16 00:39:52 | INFO     | secvuln-agent | __init__:45 | ============================================================
+2025-10-16 00:39:52 | CRITICAL | secvuln-agent | main:378 | Fatal error: Device at row 18 missing required field: device_id
+Traceback (most recent call last):
+  File "C:\Projects\secvuln-agent\src\main.py", line 366, in main
+    agent = SecVulnAgent()
+            ^^^^^^^^^^^^^^
+  File "C:\Projects\secvuln-agent\src\main.py", line 50, in __init__
+    self.devices = self.config_loader.load_devices()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\secvuln-agent\src\utils\config_loader.py", line 113, in load_devices
+    self._validate_devices()
+  File "C:\Projects\secvuln-agent\src\utils\config_loader.py", line 132, in _validate_devices
+    raise ValueError(
+ValueError: Device at row 18 missing required field: device_id
+2025-10-16 00:40:39 | INFO     | secvuln-agent | __init__:43 | ============================================================
+2025-10-16 00:40:39 | INFO     | secvuln-agent | __init__:44 | SecVuln Agent Starting...
+2025-10-16 00:40:39 | INFO     | secvuln-agent | __init__:45 | ============================================================
+2025-10-16 00:40:42 | INFO     | secvuln-agent | _initialize_collectors:113 | Initialized 5 collectors
+2025-10-16 00:40:42 | INFO     | secvuln-agent | __init__:75 | Agent 'SecVuln-Agent' initialized
+2025-10-16 00:40:42 | INFO     | secvuln-agent | __init__:76 | Check interval: 1 hours
+2025-10-16 00:40:42 | INFO     | secvuln-agent | __init__:77 | Devices loaded: 17
+2025-10-16 00:40:42 | INFO     | secvuln-agent | __init__:78 | Collectors configured: 5
+2025-10-16 00:40:42 | INFO     | secvuln-agent | start:333 | Starting SecVuln Agent with 1h interval
+2025-10-16 00:40:42 | INFO     | secvuln-agent | run_scan:303 | Starting scan cycle at 2025-10-16 00:40:42.856843
+2025-10-16 00:40:42 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from CISA KEV (tier1)...
+2025-10-16 00:40:44 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 1442 CVEs from CISA KEV
+2025-10-16 00:40:46 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from GitHub Advisories (tier1)...
+2025-10-16 00:40:49 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 100 CVEs from GitHub Advisories
+2025-10-16 00:40:51 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from OpenCVE (tier1)...
+2025-10-16 00:40:54 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from OpenCVE
+2025-10-16 00:40:56 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from RSS Feeds (tier2)...
+2025-10-16 00:41:02 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 77 CVEs from RSS Feeds
+2025-10-16 00:41:04 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from NVD (tier3)...
+2025-10-16 00:43:12 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 517 CVEs from NVD
+2025-10-16 00:43:14 | INFO     | secvuln-agent | collect_vulnerabilities:181 | Total unique CVEs collected: 2043
+2025-10-16 00:45:25 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-62410: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 00:45:25 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-62375: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 00:45:25 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-62381: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 00:45:25 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-62380: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 00:45:25 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-62251: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 00:45:25 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-59419: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 00:45:25 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-55039: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 00:45:25 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-34267: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 00:45:25 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE GHSA-hrhf-2vcr-ghch: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 00:45:25 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-62366: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 00:45:25 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-62172: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 00:45:25 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-36852: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 00:45:25 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-62157: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 00:45:26 | INFO     | secvuln-agent | process_vulnerabilities:249 | Processed 1664 vulnerabilities
+2025-10-16 00:46:08 | INFO     | secvuln-agent | run_scan:326 | Scan complete. Database stats: {'total_cves': 1664, 'unnotified_cves': 0, 'by_severity': {'LOW': 1664}, 'cisa_kev_count': 1442, 'new_last_24h': 1664}
+2025-10-16 00:46:08 | INFO     | secvuln-agent | start:341 | Agent running. Press Ctrl+C to stop.
+2025-10-16 01:57:40 | INFO     | secvuln-agent | run_scan:303 | Starting scan cycle at 2025-10-16 01:57:40.971098
+2025-10-16 01:57:41 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from CISA KEV (tier1)...
+2025-10-16 01:57:42 | ERROR    | secvuln-agent | collect_vulnerabilities:170 | Failed to collect from CISA KEV: HTTPSConnectionPool(host='www.cisa.gov', port=443): Max retries exceeded with url: /sites/default/files/feeds/known_exploited_vulnerabilities.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C2651C0C20>: Failed to resolve 'www.cisa.gov' ([Errno 11001] getaddrinfo failed)"))
+2025-10-16 01:57:42 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from GitHub Advisories (tier1)...
+2025-10-16 01:57:43 | ERROR    | secvuln-agent | collect_vulnerabilities:170 | Failed to collect from GitHub Advisories: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /advisories?per_page=100&sort=updated&direction=desc&updated=%3E%3D2025-10-16 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C2651C1970>: Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)"))
+2025-10-16 01:57:43 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from OpenCVE (tier1)...
+2025-10-16 01:57:44 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from OpenCVE
+2025-10-16 07:19:26 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from RSS Feeds (tier2)...
+2025-10-16 07:19:36 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from RSS Feeds
+2025-10-16 07:19:38 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from NVD (tier3)...
+2025-10-16 07:19:50 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 4 CVEs from NVD
+2025-10-16 07:19:52 | INFO     | secvuln-agent | collect_vulnerabilities:181 | Total unique CVEs collected: 4
+2025-10-16 07:19:52 | INFO     | secvuln-agent | process_vulnerabilities:249 | Processed 2 vulnerabilities
+2025-10-16 07:19:58 | INFO     | secvuln-agent | run_scan:326 | Scan complete. Database stats: {'total_cves': 1666, 'unnotified_cves': 0, 'by_severity': {'LOW': 1666}, 'cisa_kev_count': 1442, 'new_last_24h': 1666}
+2025-10-16 08:40:10 | INFO     | secvuln-agent | run_scan:303 | Starting scan cycle at 2025-10-16 08:40:10.662937
+2025-10-16 08:40:10 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from CISA KEV (tier1)...
+2025-10-16 08:40:22 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from CISA KEV
+2025-10-16 08:40:24 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from GitHub Advisories (tier1)...
+2025-10-16 08:40:26 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 4 CVEs from GitHub Advisories
+2025-10-16 08:40:28 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from OpenCVE (tier1)...
+2025-10-16 08:40:32 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from OpenCVE
+2025-10-16 08:40:34 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from RSS Feeds (tier2)...
+2025-10-16 08:40:41 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from RSS Feeds
+2025-10-16 08:40:43 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from NVD (tier3)...
+2025-10-16 08:40:52 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from NVD
+2025-10-16 08:40:54 | INFO     | secvuln-agent | collect_vulnerabilities:181 | Total unique CVEs collected: 4
+2025-10-16 08:40:54 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-11683: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 08:40:54 | INFO     | secvuln-agent | process_vulnerabilities:249 | Processed 0 vulnerabilities
+2025-10-16 08:40:54 | INFO     | secvuln-agent | send_notifications:260 | No new vulnerabilities to notify
+2025-10-16 08:40:54 | INFO     | secvuln-agent | run_scan:326 | Scan complete. Database stats: {'total_cves': 1666, 'unnotified_cves': 0, 'by_severity': {'LOW': 1666}, 'cisa_kev_count': 1442, 'new_last_24h': 1666}
+2025-10-16 09:56:29 | INFO     | secvuln-agent | run_scan:303 | Starting scan cycle at 2025-10-16 09:56:29.489919
+2025-10-16 09:56:29 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from CISA KEV (tier1)...
+2025-10-16 09:56:30 | ERROR    | secvuln-agent | collect_vulnerabilities:170 | Failed to collect from CISA KEV: HTTPSConnectionPool(host='www.cisa.gov', port=443): Max retries exceeded with url: /sites/default/files/feeds/known_exploited_vulnerabilities.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C26507BEF0>: Failed to resolve 'www.cisa.gov' ([Errno 11001] getaddrinfo failed)"))
+2025-10-16 09:56:30 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from GitHub Advisories (tier1)...
+2025-10-16 09:56:30 | ERROR    | secvuln-agent | collect_vulnerabilities:170 | Failed to collect from GitHub Advisories: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /advisories?per_page=100&sort=updated&direction=desc&updated=%3E%3D2025-10-16 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C26516C950>: Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)"))
+2025-10-16 09:56:30 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from OpenCVE (tier1)...
+2025-10-16 09:56:30 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from OpenCVE
+2025-10-16 09:56:32 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from RSS Feeds (tier2)...
+2025-10-16 09:56:36 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from RSS Feeds
+2025-10-16 09:56:38 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from NVD (tier3)...
+2025-10-16 09:56:44 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from NVD
+2025-10-16 09:56:46 | INFO     | secvuln-agent | collect_vulnerabilities:181 | Total unique CVEs collected: 0
+2025-10-16 09:56:46 | INFO     | secvuln-agent | run_scan:315 | No new vulnerabilities found
+2025-10-16 10:56:49 | INFO     | secvuln-agent | run_scan:303 | Starting scan cycle at 2025-10-16 10:56:49.659780
+2025-10-16 10:56:49 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from CISA KEV (tier1)...
+2025-10-16 10:56:51 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from CISA KEV
+2025-10-16 10:56:53 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from GitHub Advisories (tier1)...
+2025-10-16 10:56:56 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 8 CVEs from GitHub Advisories
+2025-10-16 10:56:58 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from OpenCVE (tier1)...
+2025-10-16 10:57:03 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from OpenCVE
+2025-10-16 10:57:05 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from RSS Feeds (tier2)...
+2025-10-16 10:57:12 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from RSS Feeds
+2025-10-16 10:57:14 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from NVD (tier3)...
+2025-10-16 10:57:23 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 2 CVEs from NVD
+2025-10-16 10:57:25 | INFO     | secvuln-agent | collect_vulnerabilities:181 | Total unique CVEs collected: 8
+2025-10-16 10:57:25 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-11683: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 10:57:25 | INFO     | secvuln-agent | process_vulnerabilities:249 | Processed 1 vulnerabilities
+2025-10-16 10:57:30 | INFO     | secvuln-agent | run_scan:326 | Scan complete. Database stats: {'total_cves': 1667, 'unnotified_cves': 0, 'by_severity': {'LOW': 1667}, 'cisa_kev_count': 1442, 'new_last_24h': 1667}
+2025-10-16 11:57:30 | INFO     | secvuln-agent | run_scan:303 | Starting scan cycle at 2025-10-16 11:57:30.997586
+2025-10-16 11:57:31 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from CISA KEV (tier1)...
+2025-10-16 11:57:33 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from CISA KEV
+2025-10-16 11:57:35 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from GitHub Advisories (tier1)...
+2025-10-16 11:57:37 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 8 CVEs from GitHub Advisories
+2025-10-16 11:57:39 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from OpenCVE (tier1)...
+2025-10-16 11:57:45 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from OpenCVE
+2025-10-16 11:57:47 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from RSS Feeds (tier2)...
+2025-10-16 11:57:53 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from RSS Feeds
+2025-10-16 11:57:55 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from NVD (tier3)...
+2025-10-16 11:58:05 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 11 CVEs from NVD
+2025-10-16 11:58:07 | INFO     | secvuln-agent | collect_vulnerabilities:181 | Total unique CVEs collected: 19
+2025-10-16 11:58:07 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-11683: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 11:58:07 | INFO     | secvuln-agent | process_vulnerabilities:249 | Processed 3 vulnerabilities
+2025-10-16 11:58:13 | INFO     | secvuln-agent | run_scan:326 | Scan complete. Database stats: {'total_cves': 1670, 'unnotified_cves': 0, 'by_severity': {'LOW': 1670}, 'cisa_kev_count': 1442, 'new_last_24h': 1670}
+2025-10-16 12:58:13 | INFO     | secvuln-agent | run_scan:303 | Starting scan cycle at 2025-10-16 12:58:13.252546
+2025-10-16 12:58:13 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from CISA KEV (tier1)...
+2025-10-16 12:58:14 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from CISA KEV
+2025-10-16 12:58:16 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from GitHub Advisories (tier1)...
+2025-10-16 12:58:17 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 8 CVEs from GitHub Advisories
+2025-10-16 12:58:19 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from OpenCVE (tier1)...
+2025-10-16 12:58:22 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from OpenCVE
+2025-10-16 12:58:24 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from RSS Feeds (tier2)...
+2025-10-16 12:58:30 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from RSS Feeds
+2025-10-16 12:58:32 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from NVD (tier3)...
+2025-10-16 12:58:41 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 6 CVEs from NVD
+2025-10-16 12:58:43 | INFO     | secvuln-agent | collect_vulnerabilities:181 | Total unique CVEs collected: 14
+2025-10-16 12:58:43 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-11683: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 12:58:43 | INFO     | secvuln-agent | process_vulnerabilities:249 | Processed 0 vulnerabilities
+2025-10-16 12:58:43 | INFO     | secvuln-agent | send_notifications:260 | No new vulnerabilities to notify
+2025-10-16 12:58:43 | INFO     | secvuln-agent | run_scan:326 | Scan complete. Database stats: {'total_cves': 1670, 'unnotified_cves': 0, 'by_severity': {'LOW': 1670}, 'cisa_kev_count': 1442, 'new_last_24h': 1670}
+2025-10-16 13:58:43 | INFO     | secvuln-agent | run_scan:303 | Starting scan cycle at 2025-10-16 13:58:43.413366
+2025-10-16 13:58:43 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from CISA KEV (tier1)...
+2025-10-16 13:58:44 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from CISA KEV
+2025-10-16 13:58:46 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from GitHub Advisories (tier1)...
+2025-10-16 13:58:47 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 37 CVEs from GitHub Advisories
+2025-10-16 13:58:49 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from OpenCVE (tier1)...
+2025-10-16 13:58:53 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from OpenCVE
+2025-10-16 13:58:55 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from RSS Feeds (tier2)...
+2025-10-16 13:59:00 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 1 CVEs from RSS Feeds
+2025-10-16 13:59:02 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from NVD (tier3)...
+2025-10-16 13:59:10 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 17 CVEs from NVD
+2025-10-16 13:59:12 | INFO     | secvuln-agent | collect_vulnerabilities:181 | Total unique CVEs collected: 38
+2025-10-16 13:59:12 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-61581: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 13:59:12 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-54539: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 13:59:12 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-41021: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 13:59:12 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-41019: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 13:59:12 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-41020: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 13:59:12 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-62584: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 13:59:12 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-41018: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 13:59:12 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-62583: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 13:59:12 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-62585: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 13:59:12 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-11683: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-16 13:59:12 | INFO     | secvuln-agent | process_vulnerabilities:249 | Processed 7 vulnerabilities
+2025-10-16 13:59:16 | INFO     | secvuln-agent | run_scan:326 | Scan complete. Database stats: {'total_cves': 1677, 'unnotified_cves': 0, 'by_severity': {'LOW': 1677}, 'cisa_kev_count': 1442, 'new_last_24h': 1677}
+2025-10-16 15:00:16 | INFO     | secvuln-agent | run_scan:303 | Starting scan cycle at 2025-10-16 15:00:16.650765
+2025-10-16 15:00:16 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from CISA KEV (tier1)...
+2025-10-16 15:00:16 | ERROR    | secvuln-agent | collect_vulnerabilities:170 | Failed to collect from CISA KEV: HTTPSConnectionPool(host='www.cisa.gov', port=443): Max retries exceeded with url: /sites/default/files/feeds/known_exploited_vulnerabilities.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C26567BF50>: Failed to resolve 'www.cisa.gov' ([Errno 11001] getaddrinfo failed)"))
+2025-10-16 15:00:16 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from GitHub Advisories (tier1)...
+2025-10-16 15:00:16 | ERROR    | secvuln-agent | collect_vulnerabilities:170 | Failed to collect from GitHub Advisories: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /advisories?per_page=100&sort=updated&direction=desc&updated=%3E%3D2025-10-16 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C26526BD70>: Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)"))
+2025-10-16 15:00:16 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from OpenCVE (tier1)...
+2025-10-16 15:00:16 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from OpenCVE
+2025-10-16 15:00:18 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from RSS Feeds (tier2)...
+2025-10-16 15:00:21 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from RSS Feeds
+2025-10-16 15:00:23 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from NVD (tier3)...
+2025-10-16 15:00:29 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from NVD
+2025-10-16 15:00:31 | INFO     | secvuln-agent | collect_vulnerabilities:181 | Total unique CVEs collected: 0
+2025-10-16 15:00:31 | INFO     | secvuln-agent | run_scan:315 | No new vulnerabilities found
+2025-10-16 16:38:16 | INFO     | secvuln-agent | run_scan:303 | Starting scan cycle at 2025-10-16 16:38:16.008409
+2025-10-16 16:38:16 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from CISA KEV (tier1)...
+2025-10-16 16:38:16 | ERROR    | secvuln-agent | collect_vulnerabilities:170 | Failed to collect from CISA KEV: HTTPSConnectionPool(host='www.cisa.gov', port=443): Max retries exceeded with url: /sites/default/files/feeds/known_exploited_vulnerabilities.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C264A5B620>: Failed to resolve 'www.cisa.gov' ([Errno 11001] getaddrinfo failed)"))
+2025-10-16 16:38:16 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from GitHub Advisories (tier1)...
+2025-10-16 16:38:17 | ERROR    | secvuln-agent | collect_vulnerabilities:170 | Failed to collect from GitHub Advisories: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /advisories?per_page=100&sort=updated&direction=desc&updated=%3E%3D2025-10-16 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C264ABE3C0>: Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)"))
+2025-10-16 16:38:17 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from OpenCVE (tier1)...
+2025-10-16 16:38:17 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from OpenCVE
+2025-10-16 16:38:19 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from RSS Feeds (tier2)...
+2025-10-16 16:38:51 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from RSS Feeds
+2025-10-16 16:38:53 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from NVD (tier3)...
+2025-10-16 16:39:02 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 2 CVEs from NVD
+2025-10-16 16:39:04 | INFO     | secvuln-agent | collect_vulnerabilities:181 | Total unique CVEs collected: 2
+2025-10-16 16:39:04 | INFO     | secvuln-agent | process_vulnerabilities:249 | Processed 1 vulnerabilities
+2025-10-16 16:39:18 | INFO     | secvuln-agent | run_scan:326 | Scan complete. Database stats: {'total_cves': 1678, 'unnotified_cves': 0, 'by_severity': {'LOW': 1678}, 'cisa_kev_count': 1442, 'new_last_24h': 1678}
+2025-10-16 17:54:12 | INFO     | secvuln-agent | run_scan:303 | Starting scan cycle at 2025-10-16 17:54:12.500986
+2025-10-16 17:54:12 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from CISA KEV (tier1)...
+2025-10-16 17:54:13 | ERROR    | secvuln-agent | collect_vulnerabilities:170 | Failed to collect from CISA KEV: HTTPSConnectionPool(host='www.cisa.gov', port=443): Max retries exceeded with url: /sites/default/files/feeds/known_exploited_vulnerabilities.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C264A59370>: Failed to resolve 'www.cisa.gov' ([Errno 11001] getaddrinfo failed)"))
+2025-10-16 17:54:13 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from GitHub Advisories (tier1)...
+2025-10-16 17:54:14 | ERROR    | secvuln-agent | collect_vulnerabilities:170 | Failed to collect from GitHub Advisories: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /advisories?per_page=100&sort=updated&direction=desc&updated=%3E%3D2025-10-16 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C265243AD0>: Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)"))
+2025-10-16 17:54:14 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from OpenCVE (tier1)...
+2025-10-16 17:54:14 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from OpenCVE
+2025-10-16 17:54:17 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from RSS Feeds (tier2)...
+2025-10-17 00:12:11 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from RSS Feeds
+2025-10-17 00:12:14 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from NVD (tier3)...
+2025-10-17 00:12:20 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from NVD
+2025-10-17 00:12:22 | INFO     | secvuln-agent | collect_vulnerabilities:181 | Total unique CVEs collected: 0
+2025-10-17 00:12:22 | INFO     | secvuln-agent | run_scan:315 | No new vulnerabilities found
+2025-10-17 01:52:18 | INFO     | secvuln-agent | run_scan:303 | Starting scan cycle at 2025-10-17 01:52:18.388912
+2025-10-17 01:52:18 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from CISA KEV (tier1)...
+2025-10-17 01:52:31 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from CISA KEV
+2025-10-17 01:52:33 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from GitHub Advisories (tier1)...
+2025-10-17 01:52:50 | ERROR    | secvuln-agent | collect_vulnerabilities:170 | Failed to collect from GitHub Advisories: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-10-17 01:52:50 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from OpenCVE (tier1)...
+2025-10-17 01:53:06 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from OpenCVE
+2025-10-17 01:53:08 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from RSS Feeds (tier2)...
+2025-10-17 01:53:14 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 1 CVEs from RSS Feeds
+2025-10-17 01:53:16 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from NVD (tier3)...
+2025-10-17 01:53:25 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 16 CVEs from NVD
+2025-10-17 01:53:27 | INFO     | secvuln-agent | collect_vulnerabilities:181 | Total unique CVEs collected: 16
+2025-10-17 01:53:27 | INFO     | secvuln-agent | process_vulnerabilities:249 | Processed 1 vulnerabilities
+2025-10-17 01:53:34 | INFO     | secvuln-agent | run_scan:326 | Scan complete. Database stats: {'total_cves': 1679, 'unnotified_cves': 0, 'by_severity': {'LOW': 1679}, 'cisa_kev_count': 1442, 'new_last_24h': 15}
+2025-10-17 03:24:29 | INFO     | secvuln-agent | run_scan:303 | Starting scan cycle at 2025-10-17 03:24:29.921547
+2025-10-17 03:24:30 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from CISA KEV (tier1)...
+2025-10-17 03:24:45 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from CISA KEV
+2025-10-17 03:24:47 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from GitHub Advisories (tier1)...
+2025-10-17 03:24:53 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 100 CVEs from GitHub Advisories
+2025-10-17 03:24:55 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from OpenCVE (tier1)...
+2025-10-17 06:53:32 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from OpenCVE
+2025-10-17 06:53:34 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from RSS Feeds (tier2)...
+2025-10-17 06:53:41 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from RSS Feeds
+2025-10-17 06:53:43 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from NVD (tier3)...
+2025-10-17 06:54:04 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 5 CVEs from NVD
+2025-10-17 06:54:06 | INFO     | secvuln-agent | collect_vulnerabilities:181 | Total unique CVEs collected: 104
+2025-10-17 06:54:06 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-62427: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 06:54:06 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-34253: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 06:54:06 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-34254: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 06:54:06 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-60358: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 06:54:06 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-61554: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 06:54:06 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-61553: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 06:54:06 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-34255: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 06:54:06 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-3930: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 06:54:06 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-61581: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 06:54:07 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-25298: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 06:54:07 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-34518: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 06:54:07 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-34513: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 06:54:07 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-34512: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 06:54:07 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-34517: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 06:54:07 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-34514: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 06:54:07 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-34515: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 06:54:07 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-34516: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 06:54:07 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-62494: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 06:54:07 | INFO     | secvuln-agent | process_vulnerabilities:249 | Processed 22 vulnerabilities
+2025-10-17 06:54:27 | INFO     | secvuln-agent | run_scan:326 | Scan complete. Database stats: {'total_cves': 1701, 'unnotified_cves': 0, 'by_severity': {'LOW': 1701}, 'cisa_kev_count': 1442, 'new_last_24h': 37}
+2025-10-17 08:51:21 | INFO     | secvuln-agent | run_scan:303 | Starting scan cycle at 2025-10-17 08:51:21.417348
+2025-10-17 08:51:21 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from CISA KEV (tier1)...
+2025-10-17 08:51:37 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from CISA KEV
+2025-10-17 08:51:39 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from GitHub Advisories (tier1)...
+2025-10-17 08:51:49 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 100 CVEs from GitHub Advisories
+2025-10-17 08:51:51 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from OpenCVE (tier1)...
+2025-10-17 08:51:58 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from OpenCVE
+2025-10-17 13:09:21 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from RSS Feeds (tier2)...
+2025-10-17 14:04:31 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 1 CVEs from RSS Feeds
+2025-10-17 14:04:33 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from NVD (tier3)...
+2025-10-17 14:05:02 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from NVD
+2025-10-17 14:05:04 | INFO     | secvuln-agent | collect_vulnerabilities:181 | Total unique CVEs collected: 100
+2025-10-17 14:05:04 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-6894: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 14:05:04 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-6892: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 14:05:04 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-6893: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 14:05:04 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-11896: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 14:05:04 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-62427: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 14:05:04 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-34253: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 14:05:04 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-34254: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 14:05:04 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-60358: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 14:05:04 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-61554: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 14:05:04 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-61553: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 14:05:04 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-34255: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 14:05:04 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-3930: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 14:05:04 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-61581: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 14:05:04 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-25298: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 14:05:04 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-34518: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 14:05:04 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-34513: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 14:05:04 | INFO     | secvuln-agent | process_vulnerabilities:249 | Processed 0 vulnerabilities
+2025-10-17 14:05:04 | INFO     | secvuln-agent | send_notifications:260 | No new vulnerabilities to notify
+2025-10-17 14:05:04 | INFO     | secvuln-agent | run_scan:326 | Scan complete. Database stats: {'total_cves': 1701, 'unnotified_cves': 0, 'by_severity': {'LOW': 1701}, 'cisa_kev_count': 1442, 'new_last_24h': 24}
+2025-10-17 15:14:46 | INFO     | secvuln-agent | run_scan:303 | Starting scan cycle at 2025-10-17 15:14:46.414584
+2025-10-17 15:14:46 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from CISA KEV (tier1)...
+2025-10-17 15:15:04 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from CISA KEV
+2025-10-17 15:15:06 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from GitHub Advisories (tier1)...
+2025-10-17 15:15:08 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 12 CVEs from GitHub Advisories
+2025-10-17 15:15:10 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from OpenCVE (tier1)...
+2025-10-17 15:15:14 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from OpenCVE
+2025-10-17 15:15:16 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from RSS Feeds (tier2)...
+2025-10-17 15:15:22 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from RSS Feeds
+2025-10-17 15:15:24 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from NVD (tier3)...
+2025-10-17 15:15:33 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 1 CVEs from NVD
+2025-10-17 15:15:35 | INFO     | secvuln-agent | collect_vulnerabilities:181 | Total unique CVEs collected: 13
+2025-10-17 15:15:35 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-6949: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 15:15:35 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-6950: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 15:15:35 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-6894: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 15:15:35 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-6892: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 15:15:35 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-6893: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 15:15:35 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-11896: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 15:15:35 | INFO     | secvuln-agent | process_vulnerabilities:249 | Processed 4 vulnerabilities
+2025-10-17 15:15:40 | INFO     | secvuln-agent | run_scan:326 | Scan complete. Database stats: {'total_cves': 1705, 'unnotified_cves': 0, 'by_severity': {'LOW': 1705}, 'cisa_kev_count': 1442, 'new_last_24h': 28}
+2025-10-17 16:30:21 | INFO     | secvuln-agent | run_scan:303 | Starting scan cycle at 2025-10-17 16:30:21.946041
+2025-10-17 16:30:21 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from CISA KEV (tier1)...
+2025-10-17 16:30:23 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from CISA KEV
+2025-10-17 16:30:25 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from GitHub Advisories (tier1)...
+2025-10-17 16:30:29 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 12 CVEs from GitHub Advisories
+2025-10-17 16:30:31 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from OpenCVE (tier1)...
+2025-10-17 16:30:35 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from OpenCVE
+2025-10-17 16:30:37 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from RSS Feeds (tier2)...
+2025-10-17 16:30:44 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from RSS Feeds
+2025-10-17 16:30:46 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from NVD (tier3)...
+2025-10-17 16:30:54 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 2 CVEs from NVD
+2025-10-17 16:30:56 | INFO     | secvuln-agent | collect_vulnerabilities:181 | Total unique CVEs collected: 14
+2025-10-17 16:30:56 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-6949: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 16:30:56 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-6950: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 16:30:56 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-6894: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 16:30:56 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-6892: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 16:30:56 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-6893: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 16:30:56 | ERROR    | secvuln-agent | process_vulnerabilities:246 | Failed to process CVE CVE-2025-11896: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-17 16:30:56 | INFO     | secvuln-agent | process_vulnerabilities:249 | Processed 2 vulnerabilities
+2025-10-17 16:31:02 | INFO     | secvuln-agent | run_scan:326 | Scan complete. Database stats: {'total_cves': 1707, 'unnotified_cves': 0, 'by_severity': {'LOW': 1707}, 'cisa_kev_count': 1442, 'new_last_24h': 30}
+2025-10-17 18:03:52 | INFO     | secvuln-agent | run_scan:303 | Starting scan cycle at 2025-10-17 18:03:52.050745
+2025-10-17 18:03:52 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from CISA KEV (tier1)...
+2025-10-17 18:03:53 | ERROR    | secvuln-agent | collect_vulnerabilities:170 | Failed to collect from CISA KEV: HTTPSConnectionPool(host='www.cisa.gov', port=443): Max retries exceeded with url: /sites/default/files/feeds/known_exploited_vulnerabilities.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C2651C2810>: Failed to resolve 'www.cisa.gov' ([Errno 11001] getaddrinfo failed)"))
+2025-10-17 18:03:54 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from GitHub Advisories (tier1)...
+2025-10-17 18:03:54 | ERROR    | secvuln-agent | collect_vulnerabilities:170 | Failed to collect from GitHub Advisories: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /advisories?per_page=100&sort=updated&direction=desc&updated=%3E%3D2025-10-17 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C264A890D0>: Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)"))
+2025-10-17 18:03:54 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from OpenCVE (tier1)...
+2025-10-17 18:03:54 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from OpenCVE
+2025-10-18 00:04:49 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from RSS Feeds (tier2)...
+2025-10-18 00:04:55 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from RSS Feeds
+2025-10-18 00:04:57 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from NVD (tier3)...
+2025-10-18 00:05:24 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from NVD
+2025-10-18 00:05:27 | INFO     | secvuln-agent | collect_vulnerabilities:181 | Total unique CVEs collected: 0
+2025-10-18 00:05:27 | INFO     | secvuln-agent | run_scan:315 | No new vulnerabilities found
+2025-10-18 01:44:37 | INFO     | secvuln-agent | run_scan:303 | Starting scan cycle at 2025-10-18 01:44:37.537698
+2025-10-18 01:44:37 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from CISA KEV (tier1)...
+2025-10-18 01:44:38 | ERROR    | secvuln-agent | collect_vulnerabilities:170 | Failed to collect from CISA KEV: HTTPSConnectionPool(host='www.cisa.gov', port=443): Max retries exceeded with url: /sites/default/files/feeds/known_exploited_vulnerabilities.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C265242360>: Failed to resolve 'www.cisa.gov' ([Errno 11001] getaddrinfo failed)"))
+2025-10-18 01:44:38 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from GitHub Advisories (tier1)...
+2025-10-18 01:44:39 | ERROR    | secvuln-agent | collect_vulnerabilities:170 | Failed to collect from GitHub Advisories: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /advisories?per_page=100&sort=updated&direction=desc&updated=%3E%3D2025-10-17 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C264ACD880>: Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)"))
+2025-10-18 01:44:39 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from OpenCVE (tier1)...
+2025-10-18 01:44:39 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from OpenCVE
+2025-10-18 01:44:42 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from RSS Feeds (tier2)...
+2025-10-18 04:34:06 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 0 CVEs from RSS Feeds
+2025-10-18 04:34:08 | INFO     | secvuln-agent | collect_vulnerabilities:150 | Collecting from NVD (tier3)...
+2025-10-18 04:34:16 | INFO     | secvuln-agent | collect_vulnerabilities:158 | Collected 27 CVEs from NVD
+2025-10-18 04:34:18 | INFO     | secvuln-agent | collect_vulnerabilities:181 | Total unique CVEs collected: 27
+2025-10-18 04:34:18 | INFO     | secvuln-agent | process_vulnerabilities:249 | Processed 3 vulnerabilities
+2025-10-18 12:00:23 | INFO     | secvuln-agent | run_scan:326 | Scan complete. Database stats: {'total_cves': 1710, 'unnotified_cves': 0, 'by_severity': {'LOW': 1710}, 'cisa_kev_count': 1442, 'new_last_24h': 9}
+2025-10-18 12:00:58 | INFO     | secvuln-agent | start:349 | Agent stopped by user
+2025-10-18 13:38:33 | INFO     | secvuln-agent | __init__:43 | ============================================================
+2025-10-18 13:38:33 | INFO     | secvuln-agent | __init__:44 | SecVuln Agent Starting...
+2025-10-18 13:38:33 | INFO     | secvuln-agent | __init__:45 | ============================================================
+2025-10-18 13:38:37 | INFO     | secvuln-agent | _initialize_collectors:114 | Initialized 5 collectors
+2025-10-18 13:38:37 | INFO     | secvuln-agent | __init__:75 | Agent 'SecVuln-Agent' initialized
+2025-10-18 13:38:37 | INFO     | secvuln-agent | __init__:76 | Check interval: 1 hours
+2025-10-18 13:38:37 | INFO     | secvuln-agent | __init__:77 | Devices loaded: 17
+2025-10-18 13:38:37 | INFO     | secvuln-agent | __init__:78 | Collectors configured: 5
+2025-10-18 13:38:37 | INFO     | secvuln-agent | start:334 | Starting SecVuln Agent with 1h interval
+2025-10-18 13:38:37 | INFO     | secvuln-agent | run_scan:304 | Starting scan cycle at 2025-10-18 13:38:37.663698
+2025-10-18 13:38:37 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from CISA KEV (tier1)...
+2025-10-18 13:38:39 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from CISA KEV
+2025-10-18 13:38:41 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from GitHub Advisories (tier1)...
+2025-10-18 13:38:44 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 100 CVEs from GitHub Advisories
+2025-10-18 13:38:46 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from OpenCVE (tier1)...
+2025-10-18 13:38:46 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from OpenCVE
+2025-10-18 13:38:48 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from RSS Feeds (tier2)...
+2025-10-18 13:38:56 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 1 CVEs from RSS Feeds
+2025-10-18 13:38:58 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from NVD (tier3)...
+2025-10-18 13:39:06 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 59 CVEs from NVD
+2025-10-18 13:39:08 | INFO     | secvuln-agent | collect_vulnerabilities:182 | Total unique CVEs collected: 101
+2025-10-18 13:39:08 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-40003: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:08 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-40002: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:08 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-40001: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-11937: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62667: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62671: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62666: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62668: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62669: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62662: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62665: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62670: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62664: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62663: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62636: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62637: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62632: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62633: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62640: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62639: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62638: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62635: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62634: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62653: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62654: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62655: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62652: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-59419: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-56316: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-56218: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-56320: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-34282: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-11925: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-34281: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 13:39:09 | INFO     | secvuln-agent | process_vulnerabilities:250 | Processed 24 vulnerabilities
+2025-10-18 13:39:15 | INFO     | secvuln-agent | run_scan:327 | Scan complete. Database stats: {'total_cves': 1734, 'unnotified_cves': 0, 'by_severity': {'LOW': 1734}, 'cisa_kev_count': 1442, 'new_last_24h': 33}
+2025-10-18 13:39:15 | INFO     | secvuln-agent | start:342 | Agent running. Press Ctrl+C to stop.
+2025-10-18 14:09:21 | INFO     | secvuln-agent | start:350 | Agent stopped by user
+2025-10-18 14:09:38 | INFO     | secvuln-agent | __init__:43 | ============================================================
+2025-10-18 14:09:38 | INFO     | secvuln-agent | __init__:44 | SecVuln Agent Starting...
+2025-10-18 14:09:38 | INFO     | secvuln-agent | __init__:45 | ============================================================
+2025-10-18 14:09:41 | INFO     | secvuln-agent | _initialize_collectors:114 | Initialized 5 collectors
+2025-10-18 14:09:41 | INFO     | secvuln-agent | __init__:75 | Agent 'SecVuln-Agent' initialized
+2025-10-18 14:09:41 | INFO     | secvuln-agent | __init__:76 | Check interval: 1 hours
+2025-10-18 14:09:41 | INFO     | secvuln-agent | __init__:77 | Devices loaded: 17
+2025-10-18 14:09:41 | INFO     | secvuln-agent | __init__:78 | Collectors configured: 5
+2025-10-18 14:09:41 | INFO     | secvuln-agent | start:334 | Starting SecVuln Agent with 1h interval
+2025-10-18 14:09:41 | INFO     | secvuln-agent | run_scan:304 | Starting scan cycle at 2025-10-18 14:09:41.272042
+2025-10-18 14:09:41 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from CISA KEV (tier1)...
+2025-10-18 14:09:43 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from CISA KEV
+2025-10-18 14:09:45 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from GitHub Advisories (tier1)...
+2025-10-18 14:09:47 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 71 CVEs from GitHub Advisories
+2025-10-18 14:09:49 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from OpenCVE (tier1)...
+2025-10-18 14:09:49 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from OpenCVE
+2025-10-18 14:09:51 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from RSS Feeds (tier2)...
+2025-10-18 14:09:58 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from RSS Feeds
+2025-10-18 14:10:00 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from NVD (tier3)...
+2025-10-18 14:10:08 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from NVD
+2025-10-18 14:10:10 | INFO     | secvuln-agent | collect_vulnerabilities:182 | Total unique CVEs collected: 71
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-40003: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-40002: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-40001: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-11937: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62667: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62671: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62666: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62668: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62669: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62662: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62665: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62670: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62664: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62663: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62636: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62637: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62632: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62633: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62640: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62639: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62638: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62635: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62634: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62653: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62654: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62655: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62652: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:10:10 | INFO     | secvuln-agent | process_vulnerabilities:250 | Processed 0 vulnerabilities
+2025-10-18 14:10:10 | INFO     | secvuln-agent | send_notifications:261 | No new vulnerabilities to notify
+2025-10-18 14:10:10 | INFO     | secvuln-agent | run_scan:327 | Scan complete. Database stats: {'total_cves': 1734, 'unnotified_cves': 0, 'by_severity': {'LOW': 1734}, 'cisa_kev_count': 1442, 'new_last_24h': 33}
+2025-10-18 14:10:10 | INFO     | secvuln-agent | start:342 | Agent running. Press Ctrl+C to stop.
+2025-10-18 14:12:54 | INFO     | secvuln-agent | start:350 | Agent stopped by user
+2025-10-18 14:13:08 | INFO     | secvuln-agent | __init__:43 | ============================================================
+2025-10-18 14:13:08 | INFO     | secvuln-agent | __init__:44 | SecVuln Agent Starting...
+2025-10-18 14:13:08 | INFO     | secvuln-agent | __init__:45 | ============================================================
+2025-10-18 14:13:11 | INFO     | secvuln-agent | _initialize_collectors:114 | Initialized 5 collectors
+2025-10-18 14:13:11 | INFO     | secvuln-agent | __init__:75 | Agent 'SecVuln-Agent' initialized
+2025-10-18 14:13:11 | INFO     | secvuln-agent | __init__:76 | Check interval: 1 hours
+2025-10-18 14:13:11 | INFO     | secvuln-agent | __init__:77 | Devices loaded: 17
+2025-10-18 14:13:11 | INFO     | secvuln-agent | __init__:78 | Collectors configured: 5
+2025-10-18 14:13:11 | INFO     | secvuln-agent | start:334 | Starting SecVuln Agent with 1h interval
+2025-10-18 14:13:11 | INFO     | secvuln-agent | run_scan:304 | Starting scan cycle at 2025-10-18 14:13:11.064173
+2025-10-18 14:13:11 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from CISA KEV (tier1)...
+2025-10-18 14:13:13 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from CISA KEV
+2025-10-18 14:13:15 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from GitHub Advisories (tier1)...
+2025-10-18 14:13:17 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 71 CVEs from GitHub Advisories
+2025-10-18 14:13:19 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from OpenCVE (tier1)...
+2025-10-18 14:13:19 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from OpenCVE
+2025-10-18 14:13:21 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from RSS Feeds (tier2)...
+2025-10-18 14:13:28 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from RSS Feeds
+2025-10-18 14:13:30 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from NVD (tier3)...
+2025-10-18 14:13:38 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from NVD
+2025-10-18 14:13:40 | INFO     | secvuln-agent | collect_vulnerabilities:182 | Total unique CVEs collected: 71
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-40003: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-40002: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-40001: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-11937: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62667: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62671: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62666: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62668: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62669: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62662: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62665: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62670: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62664: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62663: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62636: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62637: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62632: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62633: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62640: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62639: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62638: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62635: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62634: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62653: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62654: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62655: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | ERROR    | secvuln-agent | process_vulnerabilities:247 | Failed to process CVE CVE-2025-62652: '<' not supported between instances of 'NoneType' and 'float'
+2025-10-18 14:13:40 | INFO     | secvuln-agent | process_vulnerabilities:250 | Processed 0 vulnerabilities
+2025-10-18 14:13:40 | INFO     | secvuln-agent | send_notifications:261 | No new vulnerabilities to notify
+2025-10-18 14:13:41 | INFO     | secvuln-agent | run_scan:327 | Scan complete. Database stats: {'total_cves': 1734, 'unnotified_cves': 0, 'by_severity': {'LOW': 1734}, 'cisa_kev_count': 1442, 'new_last_24h': 33}
+2025-10-18 14:13:41 | INFO     | secvuln-agent | start:342 | Agent running. Press Ctrl+C to stop.
+2025-10-18 14:41:22 | INFO     | secvuln-agent | start:350 | Agent stopped by user
+2025-10-18 14:41:35 | INFO     | secvuln-agent | __init__:43 | ============================================================
+2025-10-18 14:41:35 | INFO     | secvuln-agent | __init__:44 | SecVuln Agent Starting...
+2025-10-18 14:41:35 | INFO     | secvuln-agent | __init__:45 | ============================================================
+2025-10-18 14:41:38 | INFO     | secvuln-agent | _initialize_collectors:114 | Initialized 5 collectors
+2025-10-18 14:41:38 | INFO     | secvuln-agent | __init__:75 | Agent 'SecVuln-Agent' initialized
+2025-10-18 14:41:38 | INFO     | secvuln-agent | __init__:76 | Check interval: 1 hours
+2025-10-18 14:41:38 | INFO     | secvuln-agent | __init__:77 | Devices loaded: 17
+2025-10-18 14:41:38 | INFO     | secvuln-agent | __init__:78 | Collectors configured: 5
+2025-10-18 14:41:38 | INFO     | secvuln-agent | start:339 | Starting SecVuln Agent with 1h interval
+2025-10-18 14:41:38 | INFO     | secvuln-agent | run_scan:309 | Starting scan cycle at 2025-10-18 14:41:38.862518
+2025-10-18 14:41:38 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from CISA KEV (tier1)...
+2025-10-18 14:41:41 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from CISA KEV
+2025-10-18 14:41:43 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from GitHub Advisories (tier1)...
+2025-10-18 14:41:45 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 71 CVEs from GitHub Advisories
+2025-10-18 14:41:47 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from OpenCVE (tier1)...
+2025-10-18 14:41:47 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from OpenCVE
+2025-10-18 14:41:49 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from RSS Feeds (tier2)...
+2025-10-18 14:41:56 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from RSS Feeds
+2025-10-18 14:41:58 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from NVD (tier3)...
+2025-10-18 14:42:06 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 1 CVEs from NVD
+2025-10-18 14:42:08 | INFO     | secvuln-agent | collect_vulnerabilities:182 | Total unique CVEs collected: 72
+2025-10-18 14:42:08 | INFO     | secvuln-agent | process_vulnerabilities:255 | Processed 0 vulnerabilities
+2025-10-18 14:42:08 | INFO     | secvuln-agent | send_notifications:266 | No new vulnerabilities to notify
+2025-10-18 14:42:08 | INFO     | secvuln-agent | run_scan:332 | Scan complete. Database stats: {'total_cves': 1734, 'unnotified_cves': 0, 'by_severity': {'LOW': 1734}, 'cisa_kev_count': 1442, 'new_last_24h': 33}
+2025-10-18 14:42:08 | INFO     | secvuln-agent | start:347 | Agent running. Press Ctrl+C to stop.
+2025-10-18 21:36:12 | INFO     | secvuln-agent | run_scan:309 | Starting scan cycle at 2025-10-18 21:36:12.778522
+2025-10-18 21:36:12 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from CISA KEV (tier1)...
+2025-10-18 21:36:14 | ERROR    | secvuln-agent | collect_vulnerabilities:171 | Failed to collect from CISA KEV: HTTPSConnectionPool(host='www.cisa.gov', port=443): Max retries exceeded with url: /sites/default/files/feeds/known_exploited_vulnerabilities.json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001882DACC110>: Failed to resolve 'www.cisa.gov' ([Errno 11001] getaddrinfo failed)"))
+2025-10-18 21:36:14 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from GitHub Advisories (tier1)...
+2025-10-18 21:36:15 | ERROR    | secvuln-agent | collect_vulnerabilities:171 | Failed to collect from GitHub Advisories: HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /advisories?per_page=100&sort=updated&direction=desc&updated=%3E%3D2025-10-18 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001882DACCAA0>: Failed to resolve 'api.github.com' ([Errno 11001] getaddrinfo failed)"))
+2025-10-18 21:36:15 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from OpenCVE (tier1)...
+2025-10-18 21:36:15 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from OpenCVE
+2025-10-18 21:36:17 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from RSS Feeds (tier2)...
+2025-10-18 22:27:39 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from RSS Feeds
+2025-10-18 22:27:41 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from NVD (tier3)...
+2025-10-18 22:27:47 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from NVD
+2025-10-18 22:27:49 | INFO     | secvuln-agent | collect_vulnerabilities:182 | Total unique CVEs collected: 0
+2025-10-18 22:27:49 | INFO     | secvuln-agent | run_scan:321 | No new vulnerabilities found
+2025-10-19 01:31:52 | INFO     | secvuln-agent | run_scan:309 | Starting scan cycle at 2025-10-19 01:31:52.276785
+2025-10-19 01:31:52 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from CISA KEV (tier1)...
+2025-10-19 01:31:59 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from CISA KEV
+2025-10-19 01:32:01 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from GitHub Advisories (tier1)...
+2025-10-19 01:32:03 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 73 CVEs from GitHub Advisories
+2025-10-19 01:32:05 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from OpenCVE (tier1)...
+2025-10-19 01:32:05 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from OpenCVE
+2025-10-19 01:32:07 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from RSS Feeds (tier2)...
+2025-10-19 01:32:14 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from RSS Feeds
+2025-10-19 01:32:16 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from NVD (tier3)...
+2025-10-19 01:32:24 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from NVD
+2025-10-19 01:32:26 | INFO     | secvuln-agent | collect_vulnerabilities:182 | Total unique CVEs collected: 73
+2025-10-19 01:32:27 | INFO     | secvuln-agent | process_vulnerabilities:255 | Processed 0 vulnerabilities
+2025-10-19 01:32:27 | INFO     | secvuln-agent | send_notifications:266 | No new vulnerabilities to notify
+2025-10-19 01:32:27 | INFO     | secvuln-agent | run_scan:332 | Scan complete. Database stats: {'total_cves': 1734, 'unnotified_cves': 0, 'by_severity': {'LOW': 1734}, 'cisa_kev_count': 1442, 'new_last_24h': 27}
+2025-10-19 03:43:23 | INFO     | secvuln-agent | run_scan:309 | Starting scan cycle at 2025-10-19 03:43:23.093961
+2025-10-19 03:43:23 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from CISA KEV (tier1)...
+2025-10-19 03:43:31 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from CISA KEV
+2025-10-19 11:32:02 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from GitHub Advisories (tier1)...
+2025-10-19 11:32:39 | ERROR    | secvuln-agent | collect_vulnerabilities:171 | Failed to collect from GitHub Advisories: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-10-19 11:32:39 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from OpenCVE (tier1)...
+2025-10-19 11:32:39 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 0 CVEs from OpenCVE
+2025-10-19 11:32:41 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from RSS Feeds (tier2)...
+2025-10-19 11:32:48 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 1 CVEs from RSS Feeds
+2025-10-19 11:32:50 | INFO     | secvuln-agent | collect_vulnerabilities:151 | Collecting from NVD (tier3)...
+2025-10-19 11:32:58 | INFO     | secvuln-agent | collect_vulnerabilities:159 | Collected 2 CVEs from NVD
+2025-10-19 11:33:00 | INFO     | secvuln-agent | collect_vulnerabilities:182 | Total unique CVEs collected: 2
+2025-10-19 11:33:00 | INFO     | secvuln-agent | process_vulnerabilities:255 | Processed 0 vulnerabilities
+2025-10-19 11:33:00 | INFO     | secvuln-agent | send_notifications:266 | No new vulnerabilities to notify
+2025-10-19 11:33:00 | INFO     | secvuln-agent | run_scan:332 | Scan complete. Database stats: {'total_cves': 1734, 'unnotified_cves': 0, 'by_severity': {'LOW': 1734}, 'cisa_kev_count': 1442, 'new_last_24h': 24}
+2025-10-19 11:33:56 | INFO     | secvuln-agent | start:355 | Agent stopped by user
+2025-10-19 12:55:45 | INFO     | secvuln-agent | __init__:43 | ============================================================
+2025-10-19 12:55:45 | INFO     | secvuln-agent | __init__:44 | SecVuln Agent Starting...
+2025-10-19 12:55:45 | INFO     | secvuln-agent | __init__:45 | ============================================================
+2025-10-19 12:55:48 | INFO     | secvuln-agent | _initialize_collectors:129 | Initialized 5 collectors
+2025-10-19 12:55:48 | INFO     | secvuln-agent | __init__:86 | Agent 'SecVuln-Agent' initialized
+2025-10-19 12:55:48 | INFO     | secvuln-agent | __init__:87 | Alert mode: all-cves
+2025-10-19 12:55:48 | INFO     | secvuln-agent | __init__:88 | Check interval: 1 hours
+2025-10-19 12:55:48 | INFO     | secvuln-agent | __init__:89 | Devices loaded: 17
+2025-10-19 12:55:48 | INFO     | secvuln-agent | __init__:90 | Device monitoring: ENABLED (CVSS >= 7.0)
+2025-10-19 12:55:48 | INFO     | secvuln-agent | __init__:92 | All CVEs monitoring: ENABLED (CVSS >= 8.0)
+2025-10-19 12:55:48 | INFO     | secvuln-agent | __init__:93 | Collectors configured: 5
+2025-10-19 12:55:48 | INFO     | secvuln-agent | start:376 | Starting SecVuln Agent with 1h interval
+2025-10-19 12:55:48 | INFO     | secvuln-agent | run_scan:346 | Starting scan cycle at 2025-10-19 12:55:48.611526
+2025-10-19 12:55:48 | INFO     | secvuln-agent | collect_vulnerabilities:166 | Collecting from CISA KEV (tier1)...
+2025-10-19 12:55:50 | INFO     | secvuln-agent | collect_vulnerabilities:174 | Collected 1442 CVEs from CISA KEV
+2025-10-19 12:55:52 | INFO     | secvuln-agent | collect_vulnerabilities:166 | Collecting from GitHub Advisories (tier1)...
+2025-10-19 12:55:55 | INFO     | secvuln-agent | collect_vulnerabilities:174 | Collected 100 CVEs from GitHub Advisories
+2025-10-19 12:55:57 | INFO     | secvuln-agent | collect_vulnerabilities:166 | Collecting from OpenCVE (tier1)...
+2025-10-19 12:55:57 | INFO     | secvuln-agent | collect_vulnerabilities:174 | Collected 0 CVEs from OpenCVE
+2025-10-19 12:55:59 | INFO     | secvuln-agent | collect_vulnerabilities:166 | Collecting from RSS Feeds (tier2)...
+2025-10-19 12:56:06 | INFO     | secvuln-agent | collect_vulnerabilities:174 | Collected 77 CVEs from RSS Feeds
+2025-10-19 12:56:08 | INFO     | secvuln-agent | collect_vulnerabilities:166 | Collecting from NVD (tier3)...
+2025-10-19 12:58:10 | INFO     | secvuln-agent | collect_vulnerabilities:174 | Collected 525 CVEs from NVD
+2025-10-19 12:58:12 | INFO     | secvuln-agent | collect_vulnerabilities:197 | Total unique CVEs collected: 2063
+2025-10-19 12:59:39 | INFO     | secvuln-agent | process_vulnerabilities:292 | Processed 1547 vulnerabilities
+2025-10-19 13:00:09 | INFO     | secvuln-agent | run_scan:369 | Scan complete. Database stats: {'total_cves': 1547, 'unnotified_cves': 0, 'by_severity': {'LOW': 1547}, 'cisa_kev_count': 1442, 'new_last_24h': 1547}
+2025-10-19 13:00:09 | INFO     | secvuln-agent | start:384 | Agent running. Press Ctrl+C to stop.
+2025-10-19 13:16:08 | INFO     | secvuln-agent | start:392 | Agent stopped by user
+2025-10-19 16:48:20 | INFO     | secvuln-agent | __init__:43 | ============================================================
+2025-10-19 16:48:20 | INFO     | secvuln-agent | __init__:44 | SecVuln Agent Starting...
+2025-10-19 16:48:20 | INFO     | secvuln-agent | __init__:45 | ============================================================
+2025-10-19 16:48:23 | INFO     | secvuln-agent | _initialize_collectors:129 | Initialized 5 collectors
+2025-10-19 16:48:23 | INFO     | secvuln-agent | __init__:86 | Agent 'SecVuln-Agent' initialized
+2025-10-19 16:48:23 | INFO     | secvuln-agent | __init__:87 | Alert mode: all-cves
+2025-10-19 16:48:23 | INFO     | secvuln-agent | __init__:88 | Check interval: 1 hours
+2025-10-19 16:48:23 | INFO     | secvuln-agent | __init__:89 | Devices loaded: 18
+2025-10-19 16:48:23 | INFO     | secvuln-agent | __init__:90 | Device monitoring: ENABLED (CVSS >= 7.0)
+2025-10-19 16:48:23 | INFO     | secvuln-agent | __init__:92 | All CVEs monitoring: ENABLED (CVSS >= 9.0)
+2025-10-19 16:48:23 | INFO     | secvuln-agent | __init__:93 | Collectors configured: 5
+2025-10-19 16:48:23 | INFO     | secvuln-agent | start:376 | Starting SecVuln Agent with 1h interval
+2025-10-19 16:48:23 | INFO     | secvuln-agent | run_scan:346 | Starting scan cycle at 2025-10-19 16:48:23.100921
+2025-10-19 16:48:23 | INFO     | secvuln-agent | collect_vulnerabilities:166 | Collecting from CISA KEV (tier1)...
+2025-10-19 16:48:25 | INFO     | secvuln-agent | collect_vulnerabilities:174 | Collected 1442 CVEs from CISA KEV
+2025-10-19 16:48:27 | INFO     | secvuln-agent | collect_vulnerabilities:166 | Collecting from GitHub Advisories (tier1)...
+2025-10-19 16:48:29 | INFO     | secvuln-agent | collect_vulnerabilities:174 | Collected 100 CVEs from GitHub Advisories
+2025-10-19 16:48:31 | INFO     | secvuln-agent | collect_vulnerabilities:166 | Collecting from OpenCVE (tier1)...
+2025-10-19 16:48:31 | INFO     | secvuln-agent | collect_vulnerabilities:174 | Collected 0 CVEs from OpenCVE
+2025-10-19 16:48:33 | INFO     | secvuln-agent | collect_vulnerabilities:166 | Collecting from RSS Feeds (tier2)...
+2025-10-19 16:48:40 | INFO     | secvuln-agent | collect_vulnerabilities:174 | Collected 77 CVEs from RSS Feeds
+2025-10-19 16:48:42 | INFO     | secvuln-agent | collect_vulnerabilities:166 | Collecting from NVD (tier3)...
+2025-10-19 16:50:53 | INFO     | secvuln-agent | collect_vulnerabilities:174 | Collected 525 CVEs from NVD
+2025-10-19 16:50:55 | INFO     | secvuln-agent | collect_vulnerabilities:197 | Total unique CVEs collected: 2063
+2025-10-19 16:52:31 | INFO     | secvuln-agent | process_vulnerabilities:292 | Processed 75 vulnerabilities
+2025-10-19 16:53:52 | INFO     | secvuln-agent | run_scan:369 | Scan complete. Database stats: {'total_cves': 75, 'unnotified_cves': 0, 'by_severity': {'LOW': 75}, 'cisa_kev_count': 26, 'new_last_24h': 75}
+2025-10-19 16:53:52 | INFO     | secvuln-agent | start:384 | Agent running. Press Ctrl+C to stop.
