@@ -1,6 +1,6 @@
 # 🛡️ VOIGHT SecVuln Agent
 
-> **Automated Security Vulnerability Intelligence & Monitoring System**
+> **Automated Security Vulnerability Intelligence & Monitoring Tool**
 
 [![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
